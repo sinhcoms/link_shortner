@@ -1,0 +1,16 @@
+
+/*
+URL SHORTNER Designed and Developed by sinhcoms
+Developer: NAYAN SINHA
+Version: v1.0
+Facebook/yonksinha1995	
+Github/sinhcoms
+*/
+Options +FollowSymLinks
+RewriteEngine On
+ 
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+ 
+ 
+RewriteRule ^(\w+)$ ./index.php?title=$1
